@@ -1,3 +1,5 @@
+# Optimistic UI (UI Otimista)
+
 Este projeto tem como objetivo demonstrar como funciona o conceito de Optimistic UI (UI Otimista) dentro de uma aplicação.
 
 A ideia central é permitir que a interface responda imediatamente às ações do usuário, antes da confirmação do servidor, criando a sensação de fluidez e velocidade, mesmo quando a API é lenta ou instável.
@@ -9,17 +11,17 @@ O modelo otimista inverte essa lógica: a UI assume que a operação terá suces
 
 Também é possível observar como um rollback deve ser tratado visualmente, de forma a sinalizar que algo deu errado sem quebrar o fluxo da aplicação. Além disso, essa abordagem ajuda a separar responsabilidades: a UI cuida da experiência, enquanto a API foca na persistência. Mesmo que o servidor tenha alta latência ou variação de desempenho, a navegação continua suave e previsível.
 
-Como usar este projeto
+### Como usar este projeto
 
-Basta rodar localmente para observar o comportamento otimista na prática:
-
+```
 npm install
 npm run dev
+```
 
-Tecnologias utilizadas
+### Tecnologias utilizadas
 
-React + Vite
-TailwindCSS
-Drag & Drop nativo (HTML5)
-Mock de API com atraso e falhas simuladas
-Optimistic UI com rollback
+* React + Vite
+* TailwindCSS
+* Drag & Drop nativo (HTML5)
+* Mock de API com atraso e falhas simuladas
+* Optimistic UI com rollback
